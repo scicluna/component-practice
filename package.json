@@ -1,0 +1,21 @@
+{
+  "name": "componentpractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "ts-node src/app.ts",
+    "build-server": "tsc",
+    "serve-server": "node dist/app.js",
+    "start-frontend": "cd frontend && npm run dev",
+    "build-frontend": "cd frontend && npm run build",
+    "serve-frontend": "cd frontend && npm run preview",
+    "start": "concurrently \"npm run start-server\" \"npm run start-frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
