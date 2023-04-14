@@ -1,4 +1,4 @@
-import { Product } from "../assets/groceries"
+import { Product } from "../../assets/GroceryFilter/groceries"
 import ProductTableCategory from "./ProductTableCategory";
 import IndividualProduct from "./IndividualProduct";
 
@@ -7,8 +7,8 @@ interface ProductTableProps {
 }
 
 export default function ProductTable({ products }: ProductTableProps) {
-    const categories = Array.from(new Set(products.map(product => product.category)))
 
+    const categories = Array.from(new Set(products.map(product => product.category)))
     return (
         <>
             <div className="row headers">

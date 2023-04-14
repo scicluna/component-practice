@@ -1,4 +1,4 @@
-import { Product } from "../assets/groceries";
+import { Product } from "../../assets/GroceryFilter/groceries";
 import ProductTable from "./ProductTable";
 import SearchBar from "./SearchBar";
 import { useState } from "react";
@@ -15,10 +15,16 @@ export default function FilteredProductTable({ products }: TableProps) {
         setSearch(e.target.value)
     }
 
+    function handleCheck() {
+        setChecked(checked ? false : true)
+    }
+
+    const filteredProducts = products.filter(product => product.name.toUpperCase().includes(search.toUpperCase()))
+
     return (
         <div className="table">
-            <SearchBar />
-            <ProductTable products={products} />
+            <SearchBar handleSearch={handleSearch} handleCheck={handleCheck} search={search} checked={checked} />
+            <ProductTable products={filteredProducts} />
         </div>
     )
 

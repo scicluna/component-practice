@@ -1,4 +1,4 @@
-import { Product } from "../assets/groceries"
+import { Product } from "../../assets/GroceryFilter/groceries"
 
 interface ProductTableCategoryProps {
     category: string
@@ -12,7 +12,6 @@ export default function ProductTableCategory({ category }: ProductTableCategoryP
             <div className="row">
                 <h2>{category}</h2>
             </div>
-
         </>
     )
 }

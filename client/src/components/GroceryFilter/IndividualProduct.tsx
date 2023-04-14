@@ -1,4 +1,4 @@
-import { Product } from "../assets/groceries"
+import { Product } from "../../assets/GroceryFilter/groceries"
 
 interface IndividualProductProp {
     product: Product
