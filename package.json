@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-server": "cd server && src/app.ts",
+    "start-server": "cd server && npm run start",
     "build-server": "tsc",
     "serve-server": "node dist/app.js",
     "start-frontend": "cd client && npm run dev",
     "build-frontend": "cd client && npm run build",
     "serve-frontend": "cd client && npm run preview",
-    "start": "concurrently \"npm run start-frontend\" \"npm start-server\""
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-server\""
   },
   "keywords": [],
   "author": "",
