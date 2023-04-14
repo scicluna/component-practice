@@ -1,0 +1,22 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    border: 1px solid #000;
+    width: 40vw;
+}
+
+.row {
+    display: flex;
+}
+
+.row>h4 {
+    margin: 15px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 30rem;
+}
