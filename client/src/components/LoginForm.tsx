@@ -11,7 +11,7 @@ export default function LoginForm() {
         if (!username?.current?.value || !password?.current?.value) return
 
         const login = { username: username.current.value, password: password.current.value }
-        await fetch('http://localhost:3000/api/login', {
+        await fetch('http://localhost:3000/api/users', {
             method: 'POST',
             body: JSON.stringify(login)
         })
