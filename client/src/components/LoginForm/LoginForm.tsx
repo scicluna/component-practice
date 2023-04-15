@@ -20,10 +20,14 @@ export default function LoginForm() {
 
     return (
         <form>
-            <label htmlFor="username">Username</label>
-            <input type="text" name="username" ref={username} id="username" />
-            <label htmlFor="password">Password</label>
-            <input type="password" name="password" ref={password} id="password" />
+            <div className="row">
+                <label htmlFor="username">Username</label>
+                <input type="text" name="username" ref={username} id="username" />
+            </div>
+            <div className="row">
+                <label htmlFor="password">Password</label>
+                <input type="password" name="password" ref={password} id="password" />
+            </div>
             <button type="submit" onClick={handleSubmit}>Login</button>
         </form>
     )
