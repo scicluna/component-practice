@@ -1,9 +1,12 @@
 interface ImageProps {
     image: string
-    handlePosition: () => void
 }
 
 
-export function Image({ image, handlePosition }: ImageProps) {
-    return <h1>IMAGE</h1>
+export function Image({ image }: ImageProps) {
+    return (
+        <>
+            <img src={image} style={{ width: '100%', height: '100%', aspectRatio: '60/100' }}></img>
+        </>
+    )
 }

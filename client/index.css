@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .table {
     display: flex;
     flex-direction: column;
@@ -19,4 +25,9 @@
     flex-direction: column;
     margin: 15px;
     width: 30rem;
+}
+
+.scrollbtn:hover {
+    color: white !important;
+    transition: 200ms ease;
 }
