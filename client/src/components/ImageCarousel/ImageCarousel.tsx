@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { galleryImages } from "../assets/galleryImages"
+import { galleryImages } from "../../assets/ImageCarousel/galleryImages";
 import { Image } from "./Image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCaretUp, faCaretDown } from '@fortawesome/free-solid-svg-icons';
